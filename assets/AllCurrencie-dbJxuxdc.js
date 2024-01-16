@@ -1,0 +1,7 @@
+import{_ as d,r as o,i as f,j as h,k as v,a as c,o as i,c as B,p as A,w as l,d as r,S as x,g as u,h as _}from"./index-yQ5funnV.js";const y=u(()=>_(()=>import("./SellWithBuy-wKpi_OOB.js"),__vite__mapDeps([0,1,2,3]))),k=u(()=>_(()=>import("./AnimateBase-DafRsdZl.js"),__vite__mapDeps([4,1,2,5]))),C={name:"AllCurrencie",components:{AnimateBase:k,SellWithBuy:y},setup(){const t=o(0),a=o(20),s=f([]),n=h(async()=>{await v.get("https://api.sarmayex.com/api/v2/currencies").then(e=>{e.status===200&&s.push(e.data.data.currencies.slice(t.value,a.value))}).catch(e=>{console.log(e.message)})});return{list:s,sum:n,min:t,max:a}}};function E(t,a,s,n,e,S){const m=c("SellWithBuy"),p=c("AnimateBase");return i(),B("div",null,[(i(),A(x,null,{default:l(()=>[r(m,{menu:n.list},null,8,["menu"])]),fallback:l(()=>[r(p)]),_:1}))])}const w=d(C,[["render",E]]);export{w as default};
+function __vite__mapDeps(indexes) {
+  if (!__vite__mapDeps.viteFileDeps) {
+    __vite__mapDeps.viteFileDeps = ["assets/SellWithBuy-wKpi_OOB.js","assets/index-yQ5funnV.js","assets/index-G-QnOi-0.css","assets/SellWithBuy-AP010yMa.css","assets/AnimateBase-DafRsdZl.js","assets/AnimateBase-H5_B4qOm.css"]
+  }
+  return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
+}
